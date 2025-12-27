@@ -1,0 +1,19 @@
+/*
+Theme Name: NomadLabz
+Theme URI: https://nomadlabz.com
+Author: NomadLabz Team
+Author URI: https://nomadlabz.com
+Description: A modern, premium WordPress theme for NomadLabz software solutions company. Features futuristic design with neon mint accents, smooth animations, and headless-ready architecture optimized for Vercel deployment.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: nomadlabz
+Tags: custom-menu, custom-logo, featured-images, threaded-comments, translation-ready, full-width-template, theme-options, custom-colors
+*/
+
+/* Theme styles are compiled from Tailwind CSS - see assets/css/input.css */
+
+

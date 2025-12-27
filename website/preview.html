@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NomadLabz - Preview</title>
+    <link rel="stylesheet" href="wp-content/themes/nomadlabz-theme/assets/css/style.css">
+    <style>
+        /* Additional inline styles for preview */
+        :root {
+            --color-primary: #4bffb9;
+        }
+    </style>
+</head>
+<body class="bg-black text-white antialiased">
+    <!-- Header -->
+    <header id="masthead" class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-primary/20">
+        <nav class="container mx-auto px-4 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center space-x-3 group">
+                        <img src="wp-content/themes/nomadlabz-theme/assets/images/logo.svg" 
+                             alt="NomadLabz" 
+                             class="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+                             id="header-logo">
+                    </a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-white hover:text-primary transition-colors duration-300 relative inline-block group">
+                        <span class="relative">Home<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span></span>
+                    </a>
+                    <a href="#services" class="text-white hover:text-primary transition-colors duration-300 relative inline-block group">
+                        <span class="relative">Services<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span></span>
+                    </a>
+                    <a href="#solutions" class="text-white hover:text-primary transition-colors duration-300 relative inline-block group">
+                        <span class="relative">Solutions<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span></span>
+                    </a>
+                    <a href="#about" class="text-white hover:text-primary transition-colors duration-300 relative inline-block group">
+                        <span class="relative">About<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span></span>
+                    </a>
+                    <a href="#contact" class="text-white hover:text-primary transition-colors duration-300 relative inline-block group">
+                        <span class="relative">Contact<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span></span>
+                    </a>
+                </nav>
+                <button class="md:hidden text-primary hover:text-primary/80 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" class="pt-20">
+        <!-- Hero Section -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-black via-primary/5 to-black">
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(75,255,185,0.1),transparent_50%)] animate-pulse"></div>
+            </div>
+
+            <div class="container mx-auto px-4 lg:px-8 relative z-10 text-center">
+                <div class="mb-8" id="hero-logo">
+                    <img src="wp-content/themes/nomadlabz-theme/assets/images/logo.svg" 
+                         alt="NomadLabz" 
+                         class="h-20 md:h-32 w-auto mx-auto">
+                </div>
+
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6" id="hero-title">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">
+                        AI-Powered
+                    </span>
+                    <br>
+                    <span class="text-white">Software Solutions</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto" id="hero-subtitle">
+                    End-to-end digital solutions that transform businesses through automation, innovation, and cutting-edge technology.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center" id="hero-cta">
+                    <a href="#contact" class="px-8 py-4 bg-primary text-black font-semibold rounded-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50">
+                        Get Started
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all duration-300 hover:scale-105">
+                        Talk to Us
+                    </a>
+                </div>
+            </div>
+
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce" id="scroll-indicator">
+                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section id="services" class="py-20 bg-black">
+            <div class="container mx-auto px-4 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-4" data-scroll-reveal>
+                    Our Services
+                </h2>
+                <p class="text-xl text-gray-400 text-center mb-12 max-w-2xl mx-auto" data-scroll-reveal>
+                    Comprehensive solutions tailored to your business needs
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group bg-gray-900/50 border border-primary/20 rounded-lg p-6 hover:border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/30 transition-colors">🤖</div>
+                        <h3 class="text-xl font-semibold mb-3 text-primary">AI Automations</h3>
+                        <p class="text-gray-400">Intelligent automation solutions that streamline your workflows</p>
+                    </div>
+
+                    <div class="group bg-gray-900/50 border border-primary/20 rounded-lg p-6 hover:border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/30 transition-colors">💻</div>
+                        <h3 class="text-xl font-semibold mb-3 text-primary">Custom Web Development</h3>
+                        <p class="text-gray-400">Modern, scalable web applications built to perfection</p>
+                    </div>
+
+                    <div class="group bg-gray-900/50 border border-primary/20 rounded-lg p-6 hover:border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
+                        <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/30 transition-colors">📱</div>
+                        <h3 class="text-xl font-semibold mb-3 text-primary">Mobile App Development</h3>
+                        <p class="text-gray-400">Native iOS and Android apps that deliver exceptional experiences</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-20 bg-gray-900/30">
+            <div class="container mx-auto px-4 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">Why Choose Us</h2>
+                <p class="text-xl text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+                    We combine cutting-edge technology with proven expertise
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="text-6xl mb-4 transform hover:scale-110 transition-transform duration-300">🚀</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-primary">Innovation First</h3>
+                        <p class="text-gray-400">Always at the forefront of technology trends</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-6xl mb-4 transform hover:scale-110 transition-transform duration-300">⚡</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-primary">Lightning Fast</h3>
+                        <p class="text-gray-400">Rapid development without compromising quality</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-6xl mb-4 transform hover:scale-110 transition-transform duration-300">🔒</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-primary">Secure & Scalable</h3>
+                        <p class="text-gray-400">Enterprise-grade security and infinite scalability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack -->
+        <section class="py-20 bg-black">
+            <div class="container mx-auto px-4 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Our Technology Stack</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                    <div class="text-center group">
+                        <div class="bg-gray-900/50 border border-primary/20 rounded-lg p-6 hover:border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:scale-105">
+                            <div class="text-3xl font-bold text-primary mb-2">RE</div>
+                            <div class="text-sm text-gray-400">React</div>
+                        </div>
+                    </div>
+                    <div class="text-center group">
+                        <div class="bg-gray-900/50 border border-primary/20 rounded-lg p-6 hover:border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:scale-105">
+                            <div class="text-3xl font-bold text-primary mb-2">NO</div>
+                            <div class="text-sm text-gray-400">Node.js</div>
+                        </div>
+                    </div>
+                    <div class="text-center group">
+                        <div class="bg-gray-900/50 border border-primary/20 rounded-lg p-6 hover:border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:scale-105">
+                            <div class="text-3xl font-bold text-primary mb-2">PY</div>
+                            <div class="text-sm text-gray-400">Python</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="py-20 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10">
+            <div class="container mx-auto px-4 lg:px-8 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Transform Your Business?</h2>
+                <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                    Let's discuss how we can help you achieve your goals with innovative software solutions.
+                </p>
+                <a href="#contact" class="inline-block px-8 py-4 bg-primary text-black font-semibold rounded-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50">
+                    Get Started Today
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="colophon" class="bg-black border-t border-primary/20 py-12 mt-20">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="inline-block mb-4">
+                        <img src="wp-content/themes/nomadlabz-theme/assets/images/logo.svg" 
+                             alt="NomadLabz" 
+                             class="h-8 w-auto">
+                    </a>
+                    <p class="text-gray-400 text-sm max-w-md">
+                        End-to-end software solutions powered by AI and automation.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-primary font-semibold mb-4">Quick Links</h3>
+                    <nav class="space-y-2">
+                        <a href="#home" class="block text-gray-400 hover:text-primary transition-colors">Home</a>
+                        <a href="#services" class="block text-gray-400 hover:text-primary transition-colors">Services</a>
+                        <a href="#solutions" class="block text-gray-400 hover:text-primary transition-colors">Solutions</a>
+                        <a href="#about" class="block text-gray-400 hover:text-primary transition-colors">About</a>
+                        <a href="#contact" class="block text-gray-400 hover:text-primary transition-colors">Contact</a>
+                    </nav>
+                </div>
+                <div>
+                    <h3 class="text-primary font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#contact" class="hover:text-primary transition-colors">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-primary/20 pt-8">
+                <p class="text-center text-sm text-gray-500">
+                    &copy; 2024 NomadLabz. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="wp-content/themes/nomadlabz-theme/assets/js/main.js"></script>
+</body>
+</html>
+
+

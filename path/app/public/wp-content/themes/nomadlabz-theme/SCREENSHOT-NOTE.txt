@@ -1,0 +1,17 @@
+SCREENSHOT.PNG NOTE
+===================
+
+WordPress themes typically include a screenshot.png file (1200x900 pixels) 
+that appears in the WordPress admin theme browser.
+
+This file is OPTIONAL but recommended.
+
+To add a screenshot:
+1. Create a 1200x900 pixel PNG image showing your theme design
+2. Name it "screenshot.png"
+3. Place it in the theme root directory (wp-content/themes/nomadlabz-theme/)
+
+The screenshot helps users identify your theme visually in the admin panel.
+
+For now, WordPress will show a default placeholder, which is perfectly fine.
+

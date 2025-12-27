@@ -1,0 +1,15 @@
+node_modules/
+npm-debug.log
+package-lock.json
+*.log
+.DS_Store
+Thumbs.db
+
+# Build files (optional - uncomment if you want to ignore compiled CSS)
+# assets/css/style.css
+
+# WordPress
+.htaccess
+wp-config.php
+
+

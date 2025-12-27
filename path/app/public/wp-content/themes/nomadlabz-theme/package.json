@@ -1,0 +1,24 @@
+{
+  "name": "nomadlabz-theme",
+  "version": "1.0.0",
+  "description": "Modern WordPress theme for NomadLabz software solutions",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify",
+    "watch:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
+    "build": "npm run build:css"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "tailwindcss"
+  ],
+  "author": "NomadLabz",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  }
+}
+
+
