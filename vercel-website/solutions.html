@@ -3,264 +3,417 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Industry-specific solutions and case studies from NomadLabz">
     <title>Solutions - NomadLabz</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="./Images/NomadLabz.svg">
+    <link rel="icon" type="image/png" href="./Images/NomadLabz.png">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .solution-card {
+            background-color: var(--card-bg);
+            padding: 3rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 3rem;
+            transition: all 0.3s ease;
+        }
+        .solution-card:hover {
+            background-color: var(--card-hover);
+            transform: translateY(-5px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+        }
+        .solution-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .solution-icon {
+            font-size: 4rem;
+            filter: grayscale(0.3);
+        }
+        .solution-title {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .solution-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        .solution-section h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        .solution-section p {
+            color: var(--text-secondary);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+        .solution-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .solution-list li {
+            color: var(--text-secondary);
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            line-height: 1.7;
+        }
+        .solution-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-purple);
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .solution-content {
+                grid-template-columns: 1fr;
+            }
+            .solution-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header placeholder -->
-    <div id="header-placeholder"></div>
-    
-    <!-- Main Content -->
-    <main>
-        <!-- Page Header -->
-        <section class="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-br from-charcoal-50 via-white to-purple-50">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-3xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal-900 mb-6 animate-on-scroll">
-                        Our <span class="gradient-text">Solutions</span>
-                    </h1>
-                    <p class="text-xl text-charcoal-600 animate-on-scroll">
-                        Tailored digital solutions for every industry and business need
-                    </p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="./index.html" class="logo-brand">
+                    <img src="./Images/NomadLabz.svg" alt="NomadLabz" class="logo-img" onerror="this.onerror=null; this.src='./Images/NomadLabz.png';">
+                    <span class="brand-text">Nomad Labz</span>
+                </a>
+                <nav class="nav">
+                    <a href="./index.html" class="nav-link">Home</a>
+                    <a href="./about.html" class="nav-link">About</a>
+                    <a href="./services.html" class="nav-link">Services</a>
+                    <a href="./solutions.html" class="nav-link">Solutions</a>
+                    <a href="./portfolio.html" class="nav-link">Portfolio</a>
+                    <a href="./contact.html" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-headline">Industry Solutions</h1>
+                <p class="hero-subheading">Tailored software solutions designed to address the unique challenges and opportunities in your industry. We understand that each sector has specific needs, and we build accordingly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Solutions Overview -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Solutions by Industry</h2>
+            <div class="services-grid">
+                <div class="service-card service-card-green">
+                    <div class="service-icon">🚀</div>
+                    <h3 class="service-title">Startups</h3>
+                    <p class="service-description">Rapid development and scalable architecture to help startups launch quickly and grow efficiently.</p>
+                </div>
+                <div class="service-card service-card-purple">
+                    <div class="service-icon">🏢</div>
+                    <h3 class="service-title">Enterprises</h3>
+                    <p class="service-description">Enterprise-grade solutions for complex organizations requiring robust, scalable systems.</p>
+                </div>
+                <div class="service-card service-card-green">
+                    <div class="service-icon">🛒</div>
+                    <h3 class="service-title">E-commerce</h3>
+                    <p class="service-description">Complete e-commerce platforms with AI-powered features and seamless payment processing.</p>
+                </div>
+                <div class="service-card service-card-purple">
+                    <div class="service-icon">🎓</div>
+                    <h3 class="service-title">Education</h3>
+                    <p class="service-description">Learning management systems and educational tools that enhance teaching and learning.</p>
+                </div>
+                <div class="service-card service-card-green">
+                    <div class="service-icon">🏥</div>
+                    <h3 class="service-title">Healthcare</h3>
+                    <p class="service-description">Secure, compliant healthcare solutions including patient portals and telemedicine platforms.</p>
+                </div>
+                <div class="service-card service-card-purple">
+                    <div class="service-icon">💰</div>
+                    <h3 class="service-title">Financial Services</h3>
+                    <p class="service-description">Secure fintech solutions with compliance, automation, and advanced analytics capabilities.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Solutions Overview -->
-        <section class="section bg-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-                    <div class="animate-on-scroll">
-                        <h2 class="text-3xl md:text-4xl font-bold text-charcoal-900 mb-6">
-                            Industry-Specific Solutions
-                        </h2>
-                        <p class="text-lg text-charcoal-600 mb-6">
-                            We understand that every industry has unique challenges and requirements. Our solutions are tailored to meet the specific needs of your sector.
-                        </p>
-                        <p class="text-charcoal-600">
-                            From healthcare to finance, e-commerce to education, we've delivered transformative digital solutions across a wide range of industries.
-                        </p>
-                    </div>
-                    <div class="animate-on-scroll">
-                        <div class="bg-gradient-to-br from-green-50 to-purple-50 rounded-2xl p-8 h-full flex items-center justify-center">
-                            <div class="text-center">
-                                <div class="text-5xl font-bold text-charcoal-900 mb-2">15+</div>
-                                <div class="text-xl text-charcoal-600">Industries Served</div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Detailed Solutions -->
+    <section class="services" style="padding-top: 3rem;">
+        <div class="container">
+            <!-- Startups -->
+            <div class="solution-card">
+                <div class="solution-header">
+                    <div class="solution-icon">🚀</div>
+                    <h2 class="solution-title" style="background: var(--gradient-green-purple); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Startups</h2>
                 </div>
-
-                <!-- Solution Categories -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Solution 1 -->
-                    <div class="card animate-on-scroll">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                                </svg>
-                            </div>
-                            <h3 class="text-2xl font-bold text-charcoal-900">E-Commerce Solutions</h3>
-                        </div>
-                        <p class="text-charcoal-600 mb-4">
-                            Complete e-commerce platforms with payment integration, inventory management, and analytics.
-                        </p>
-                        <ul class="space-y-2 text-charcoal-600">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Shopping cart & checkout systems
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Payment gateway integration
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Order management systems
-                            </li>
+                <div class="solution-content">
+                    <div class="solution-section">
+                        <h4>Pain Points</h4>
+                        <p>Startups face unique challenges: limited budgets, rapid growth needs, and the pressure to prove market fit quickly. Common struggles include:</p>
+                        <ul class="solution-list">
+                            <li>Need to launch fast with limited resources</li>
+                            <li>Scaling infrastructure as user base grows</li>
+                            <li>Building MVP quickly without technical debt</li>
+                            <li>Attracting investors with a working product</li>
+                            <li>Competing with established players</li>
                         </ul>
                     </div>
-
-                    <!-- Solution 2 -->
-                    <div class="card animate-on-scroll">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                                </svg>
-                            </div>
-                            <h3 class="text-2xl font-bold text-charcoal-900">Learning Management</h3>
-                        </div>
-                        <p class="text-charcoal-600 mb-4">
-                            Comprehensive LMS platforms for educational institutions and corporate training.
-                        </p>
-                        <ul class="space-y-2 text-charcoal-600">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Course management & delivery
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Student progress tracking
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Interactive assessments
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Solution 3 -->
-                    <div class="card animate-on-scroll">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                                </svg>
-                            </div>
-                            <h3 class="text-2xl font-bold text-charcoal-900">Healthcare Platforms</h3>
-                        </div>
-                        <p class="text-charcoal-600 mb-4">
-                            HIPAA-compliant healthcare solutions for patient management and telemedicine.
-                        </p>
-                        <ul class="space-y-2 text-charcoal-600">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Patient portal systems
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Telemedicine integration
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Electronic health records
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Solution 4 -->
-                    <div class="card animate-on-scroll">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                            <h3 class="text-2xl font-bold text-charcoal-900">FinTech Solutions</h3>
-                        </div>
-                        <p class="text-charcoal-600 mb-4">
-                            Secure financial technology platforms with advanced security and compliance features.
-                        </p>
-                        <ul class="space-y-2 text-charcoal-600">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Payment processing systems
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Banking integrations
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Fraud detection & prevention
-                            </li>
+                    <div class="solution-section">
+                        <h4>How Nomad Labz Helps</h4>
+                        <p>We specialize in rapid MVP development and scalable architecture that grows with your startup. Our approach includes:</p>
+                        <ul class="solution-list">
+                            <li>Lean development process for faster time-to-market</li>
+                            <li>Cloud-native architecture that scales automatically</li>
+                            <li>AI-powered features that differentiate your product</li>
+                            <li>Cost-effective solutions that maximize budget impact</li>
+                            <li>Technical foundation built for future growth</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Process Section -->
-        <section class="section bg-gradient-to-br from-charcoal-50 to-purple-50">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-charcoal-900 mb-4 animate-on-scroll">
-                        Our Process
-                    </h2>
-                    <p class="text-lg text-charcoal-600 max-w-2xl mx-auto animate-on-scroll">
-                        A proven methodology that ensures successful project delivery
-                    </p>
+            <!-- Enterprises -->
+            <div class="solution-card">
+                <div class="solution-header">
+                    <div class="solution-icon">🏢</div>
+                    <h2 class="solution-title" style="background: var(--gradient-purple-green); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Enterprises</h2>
                 </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div class="text-center animate-on-scroll">
-                        <div class="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
-                        <h3 class="text-xl font-semibold text-charcoal-900 mb-2">Discovery</h3>
-                        <p class="text-charcoal-600">Understanding your business needs and goals</p>
+                <div class="solution-content">
+                    <div class="solution-section">
+                        <h4>Pain Points</h4>
+                        <p>Large organizations grapple with legacy systems, complex integrations, and the need to modernize without disrupting operations. Key challenges include:</p>
+                        <ul class="solution-list">
+                            <li>Outdated legacy systems that limit innovation</li>
+                            <li>Complex integrations across multiple departments</li>
+                            <li>Security and compliance requirements</li>
+                            <li>Need for digital transformation without disruption</li>
+                            <li>Managing large-scale deployments</li>
+                        </ul>
                     </div>
-                    <div class="text-center animate-on-scroll">
-                        <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
-                        <h3 class="text-xl font-semibold text-charcoal-900 mb-2">Strategy</h3>
-                        <p class="text-charcoal-600">Developing a comprehensive solution roadmap</p>
-                    </div>
-                    <div class="text-center animate-on-scroll">
-                        <div class="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
-                        <h3 class="text-xl font-semibold text-charcoal-900 mb-2">Development</h3>
-                        <p class="text-charcoal-600">Building your solution with agile methodology</p>
-                    </div>
-                    <div class="text-center animate-on-scroll">
-                        <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
-                        <h3 class="text-xl font-semibold text-charcoal-900 mb-2">Launch & Support</h3>
-                        <p class="text-charcoal-600">Deployment and ongoing maintenance</p>
+                    <div class="solution-section">
+                        <h4>How Nomad Labz Helps</h4>
+                        <p>We design enterprise-grade solutions that integrate seamlessly with existing infrastructure while modernizing capabilities:</p>
+                        <ul class="solution-list">
+                            <li>Phased migration strategies that minimize risk</li>
+                            <li>Robust architecture designed for scale and reliability</li>
+                            <li>Security-first approach meeting compliance standards</li>
+                            <li>API-driven integration with legacy systems</li>
+                            <li>Dedicated support and maintenance services</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- CTA Section -->
-        <section class="section bg-charcoal-900 text-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-3xl mx-auto text-center">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-on-scroll">
-                        Let's Build Your Solution
-                    </h2>
-                    <p class="text-xl text-charcoal-300 mb-8 animate-on-scroll">
-                        Get in touch to discuss how we can create a custom solution for your business.
-                    </p>
-                    <div class="animate-on-scroll">
-                        <a href="contact.html" class="btn-primary bg-green-600 hover:bg-green-700 inline-block">Start a Project</a>
+            <!-- E-commerce -->
+            <div class="solution-card">
+                <div class="solution-header">
+                    <div class="solution-icon">🛒</div>
+                    <h2 class="solution-title" style="background: var(--gradient-green-purple); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">E-commerce</h2>
+                </div>
+                <div class="solution-content">
+                    <div class="solution-section">
+                        <h4>Pain Points</h4>
+                        <p>E-commerce businesses struggle with cart abandonment, inventory management, personalization, and providing exceptional customer experiences. Common issues include:</p>
+                        <ul class="solution-list">
+                            <li>High cart abandonment rates</li>
+                            <li>Complex inventory and order management</li>
+                            <li>Limited personalization capabilities</li>
+                            <li>Payment and checkout friction</li>
+                            <li>Mobile experience gaps</li>
+                        </ul>
+                    </div>
+                    <div class="solution-section">
+                        <h4>How Nomad Labz Helps</h4>
+                        <p>We build complete e-commerce platforms with AI-powered recommendations and seamless user experiences:</p>
+                        <ul class="solution-list">
+                            <li>AI-driven product recommendations and personalization</li>
+                            <li>Streamlined checkout processes reducing abandonment</li>
+                            <li>Real-time inventory management systems</li>
+                            <li>Mobile-first responsive design</li>
+                            <li>Integrated payment and shipping solutions</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    
-    <!-- Footer placeholder -->
-    <div id="footer-placeholder"></div>
-    
-    <!-- Scripts -->
-    <script src="js/components.js"></script>
-    <script src="js/main.js"></script>
+
+            <!-- Education -->
+            <div class="solution-card">
+                <div class="solution-header">
+                    <div class="solution-icon">🎓</div>
+                    <h2 class="solution-title" style="background: var(--gradient-purple-green); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Education</h2>
+                </div>
+                <div class="solution-content">
+                    <div class="solution-section">
+                        <h4>Pain Points</h4>
+                        <p>Educational institutions need to deliver engaging learning experiences while managing administration efficiently. Key challenges include:</p>
+                        <ul class="solution-list">
+                            <li>Engaging students in remote and hybrid learning</li>
+                            <li>Managing complex administrative workflows</li>
+                            <li>Tracking student progress and outcomes</li>
+                            <li>Limited accessibility and inclusivity features</li>
+                            <li>Integration with existing educational tools</li>
+                        </ul>
+                    </div>
+                    <div class="solution-section">
+                        <h4>How Nomad Labz Helps</h4>
+                        <p>We create learning management systems and educational tools that enhance both teaching and learning:</p>
+                        <ul class="solution-list">
+                            <li>Interactive learning platforms with AI-powered insights</li>
+                            <li>Student portals with progress tracking</li>
+                            <li>Administrative automation reducing manual work</li>
+                            <li>Accessible design meeting diverse learning needs</li>
+                            <li>Integration with popular educational software</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Healthcare -->
+            <div class="solution-card">
+                <div class="solution-header">
+                    <div class="solution-icon">🏥</div>
+                    <h2 class="solution-title" style="background: var(--gradient-green-purple); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Healthcare</h2>
+                </div>
+                <div class="solution-content">
+                    <div class="solution-section">
+                        <h4>Pain Points</h4>
+                        <p>Healthcare providers face unique challenges around patient privacy, regulatory compliance, and improving care delivery. Common struggles include:</p>
+                        <ul class="solution-list">
+                            <li>Patient data security and HIPAA compliance</li>
+                            <li>Fragmented patient information across systems</li>
+                            <li>Limited telemedicine capabilities</li>
+                            <li>Inefficient appointment scheduling and management</li>
+                            <li>Difficulty accessing patient records quickly</li>
+                        </ul>
+                    </div>
+                    <div class="solution-section">
+                        <h4>How Nomad Labz Helps</h4>
+                        <p>We build secure, compliant healthcare solutions prioritizing privacy and usability:</p>
+                        <ul class="solution-list">
+                            <li>HIPAA-compliant patient portals and systems</li>
+                            <li>Secure telemedicine platforms for remote care</li>
+                            <li>Integrated electronic health record (EHR) systems</li>
+                            <li>Automated appointment scheduling and reminders</li>
+                            <li>Encrypted data storage and transmission</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Financial Services -->
+            <div class="solution-card">
+                <div class="solution-header">
+                    <div class="solution-icon">💰</div>
+                    <h2 class="solution-title" style="background: var(--gradient-purple-green); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Financial Services</h2>
+                </div>
+                <div class="solution-content">
+                    <div class="solution-section">
+                        <h4>Pain Points</h4>
+                        <p>Financial institutions must balance security, compliance, and user experience while modernizing outdated systems. Key challenges include:</p>
+                        <ul class="solution-list">
+                            <li>Regulatory compliance (PCI-DSS, GDPR, SOX)</li>
+                            <li>Fraud detection and prevention</li>
+                            <li>Real-time transaction processing</li>
+                            <li>Legacy system integration and modernization</li>
+                            <li>Customer experience expectations</li>
+                        </ul>
+                    </div>
+                    <div class="solution-section">
+                        <h4>How Nomad Labz Helps</h4>
+                        <p>We develop secure fintech solutions with compliance, automation, and advanced analytics:</p>
+                        <ul class="solution-list">
+                            <li>Compliance-first architecture meeting regulatory standards</li>
+                            <li>AI-powered fraud detection and prevention systems</li>
+                            <li>Real-time transaction processing infrastructure</li>
+                            <li>Secure API integrations with banking systems</li>
+                            <li>Modern user interfaces improving customer experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Not Seeing Your Industry?</h2>
+                <p class="cta-text">We work across diverse sectors and have experience solving unique industry challenges. Let's discuss how we can create a custom solution tailored to your specific industry needs and business goals.</p>
+                <a href="./contact.html" class="btn btn-primary btn-large">Discuss Your Needs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo-brand">
+                        <img src="./Images/NomadLabz.svg" alt="NomadLabz" class="footer-logo-img" onerror="this.onerror=null; this.src='./Images/NomadLabz.png';">
+                        <span class="footer-brand-text">Nomad Labz</span>
+                    </div>
+                    <p class="footer-description">Premium software solutions powered by AI and modern engineering practices. Transforming businesses through intelligent automation and cutting-edge technology.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="./index.html" class="footer-link">Home</a>
+                        <a href="./about.html" class="footer-link">About</a>
+                        <a href="./services.html" class="footer-link">Services</a>
+                        <a href="./solutions.html" class="footer-link">Solutions</a>
+                        <a href="./portfolio.html" class="footer-link">Portfolio</a>
+                        <a href="./contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Services</h4>
+                    <div class="footer-links">
+                        <a href="./services.html#ai-automations" class="footer-link">AI Automations</a>
+                        <a href="./services.html#web-applications" class="footer-link">Web Applications</a>
+                        <a href="./services.html#mobile-apps" class="footer-link">Mobile Apps</a>
+                        <a href="./services.html#api-integrations" class="footer-link">API Integrations</a>
+                        <a href="./services.html#cloud-deployment" class="footer-link">Cloud & Deployment</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Get Started</h4>
+                    <p class="footer-cta-text">Ready to transform your business?</p>
+                    <a href="./contact.html" class="btn btn-footer">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 NomadLabz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js" defer></script>
 </body>
 </html>
-
