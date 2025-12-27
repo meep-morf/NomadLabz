@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build && npm run copy-assets",
     "copy-assets": "node scripts/copy-assets.js",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vercel-build": "npm run build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
