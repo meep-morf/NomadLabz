@@ -1,8 +1,8 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
+  "buildCommand": "cd vercel-website && npm install && npm run build",
+  "outputDirectory": "vercel-website/dist",
+  "devCommand": "cd vercel-website && npm run dev",
+  "installCommand": "cd vercel-website && npm install",
   "framework": "vite",
   "cleanUrls": true,
   "trailingSlash": false
