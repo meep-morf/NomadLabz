@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-charcoal-900 bg-white antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  /* Prevent layout shift */
+  img {
+    @apply max-w-full h-auto;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  /* Navigation styles */
+  .nav-link {
+    @apply text-charcoal-700 hover:text-charcoal-900 transition-colors duration-200 font-medium;
+  }
+  
+  .nav-link-active {
+    @apply text-charcoal-900 font-semibold;
+  }
+  
+  /* Button styles */
+  .btn-primary {
+    @apply bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 shadow-md hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-charcoal-100 hover:bg-charcoal-200 text-charcoal-900 px-6 py-3 rounded-lg font-semibold transition-all duration-200;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-charcoal-300 hover:border-charcoal-400 text-charcoal-700 hover:text-charcoal-900 px-6 py-3 rounded-lg font-semibold transition-all duration-200;
+  }
+  
+  /* Section spacing */
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-sm {
+    @apply py-12 md:py-16;
+  }
+  
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6;
+  }
+  
+  /* Animation utilities */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  }
+  
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-green-600 to-purple-600 bg-clip-text text-transparent;
+  }
+}
+
+/* Smooth scroll animations */
+@layer utilities {
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+}
+
